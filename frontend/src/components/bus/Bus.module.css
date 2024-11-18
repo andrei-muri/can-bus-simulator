@@ -1,0 +1,47 @@
+@import url(../../gstyles/variables.css);
+
+.container {
+    grid-area: bus;
+    padding: 0px var(--padding-medium);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: var(--gap-medium);
+}
+
+.title {
+    font-family: var(--source-code-pro-font);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-extra-bold);
+    font-optical-sizing: auto;
+    color: var(--dark-blue);
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-medium);
+    font: var(--source-code-pro-font);
+}
+
+.text {
+    font-family: var(--source-code-pro-font);
+    font-size: var(--font-size-legend);
+    font-weight: var(--font-weight-bold);
+    color: var(--dark-blue);
+}
+
+.wire {
+    width: 70px;
+    height: 4px;
+}
+
+.green {
+    background-color: rgb(0, 150, 0);
+}
+
+.orange {
+    background-color: rgb(255, 165, 0);
+}
