@@ -1,0 +1,38 @@
+{
+  "configuration_name": "testAbsAndEsp",
+  "ecus": [
+    "ABS",
+    "ESP",
+    "MCM"
+  ],
+  "messages": [
+    {
+      "time": 1,
+      "sent_by": "MCM",
+      "message_name": "ABS on",
+      "data_length": 1,
+      "data": "0xff"
+    },
+    {
+      "time": 23,
+      "sent_by": "MCM",
+      "message_name": "ESP on",
+      "data_length": 1,
+      "data": "0xcf"
+    },
+    {
+      "time": 44,
+      "sent_by": "MCM",
+      "message_name": "ABS off",
+      "data_length": 1,
+      "data": "0x1"
+    },
+    {
+      "time": 64,
+      "sent_by": "MCM",
+      "message_name": "ESP off",
+      "data_length": 1,
+      "data": "0x2c"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+    "configuration_name": "Configuration 1",
+    "ecus": [
+        "ECM",
+        "DCU",
+        "ABS",
+        "IVI"
+    ],
+    "messages": [
+        {
+            "time": 1,
+            "sent_by": "ECM",
+            "message_name": "Engine speed",
+            "data_length": 1,
+            "data": "0x2"
+        },
+        {
+            "time": 1,
+            "sent_by": "ABS",
+            "message_name": "Brake pressure",
+            "data_length": 1,
+            "data": "0x1"
+        },
+        {
+            "time": 21,
+            "sent_by": "ECM",
+            "message_name": "Engine temperature",
+            "data_length": 1,
+            "data": "0x7"
+        },
+        {
+            "time": 31,
+            "sent_by": "IVI",
+            "message_name": "Media track info",
+            "data_length": 1,
+            "data": "0x1"
+        },
+        {
+            "time": 31,
+            "sent_by": "ABS",
+            "message_name": "Wheel speed",
+            "data_length": 1,
+            "data": "0xA"
+        },
+        {
+            "time": 3,
+            "sent_by": "DCU",
+            "message_name": "Diagnostic read request",
+            "data_length": 1,
+            "data": "0xF"
+        },
+        {
+            "time": 4,
+            "sent_by": "ECM",
+            "message_name": "Throttle position",
+            "data_length": 1,
+            "data": "0x3"
+        },
+        {
+            "time": 5,
+            "sent_by": "IVI",
+            "message_name": "Navigation directions",
+            "data_length": 1,
+            "data": "0xD"
+        }
+    ]
+}

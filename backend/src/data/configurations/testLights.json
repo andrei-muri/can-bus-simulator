@@ -1,0 +1,37 @@
+{
+  "configuration_name": "testLights",
+  "ecus": [
+    "LCM",
+    "MCM"
+  ],
+  "messages": [
+    {
+      "time": 1,
+      "sent_by": "MCM",
+      "message_name": "Lights on",
+      "data_length": 1,
+      "data": "0x1"
+    },
+    {
+      "time": 22,
+      "sent_by": "MCM",
+      "message_name": "Toggle lights mode",
+      "data_length": 1,
+      "data": "0x2"
+    },
+    {
+      "time": 44,
+      "sent_by": "MCM",
+      "message_name": "Lights off",
+      "data_length": 1,
+      "data": "0x3"
+    },
+    {
+      "time": 64,
+      "sent_by": "MCM",
+      "message_name": "Toggle lights mode",
+      "data_length": 1,
+      "data": "0x1"
+    }
+  ]
+}

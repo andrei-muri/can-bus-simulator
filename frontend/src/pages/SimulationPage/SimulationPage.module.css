@@ -1,0 +1,10 @@
+.page {
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "logger wireframe wireframe buttons"
+    "logger bus arbitration results";
+    grid-template-rows: 100px auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+}

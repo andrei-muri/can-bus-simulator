@@ -1,0 +1,41 @@
+{
+  "configuration_name": "testDinamicMessages",
+  "ecus": [
+    "ECM",
+    "ABS",
+    "PCM",
+    "CCM",
+    "PDC",
+    "DCU"
+  ],
+  "messages": [
+    {
+      "time": 1,
+      "sent_by": "ECM",
+      "message_name": "Engine speed",
+      "data_length": 1,
+      "data": "0x11"
+    },
+    {
+      "time": 4,
+      "sent_by": "CCM",
+      "message_name": "Airflow direction",
+      "data_length": 1,
+      "data": "0xaa"
+    },
+    {
+      "time": 12,
+      "sent_by": "DCU",
+      "message_name": "Diagnostic read request",
+      "data_length": 1,
+      "data": "0xcc"
+    },
+    {
+      "time": 34,
+      "sent_by": "PDC",
+      "message_name": "Parking distance warning",
+      "data_length": 1,
+      "data": "0xaa"
+    }
+  ]
+}

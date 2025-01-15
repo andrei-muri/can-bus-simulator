@@ -1,0 +1,70 @@
+.popup {
+  background-color: var(--grey-blue); /* Light grey-blue background */
+  padding: var(--padding-medium);
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: var(--source-code-pro-font);
+  overflow-y: auto; /* Enable scrolling for overflowing content */
+}
+
+.popup::-webkit-scrollbar {
+  width: 15px; /* Adjust width for vertical scrollbar */
+}
+
+.popup::-webkit-scrollbar-thumb {
+  background-color: var(--dark-blue); /* Set thumb color */
+}
+
+.popup::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Set track color */
+}
+
+.popup::-webkit-scrollbar-thumb:hover {
+  background-color: var(--mid-blue); /* Change thumb color on hover */
+}
+
+h2 {
+  font-size: var(--font-size-medium);
+  color: var(--dark-blue);
+  text-align: center;
+  margin-bottom: var(--gap-medium);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-medium);
+}
+
+label {
+  font-size: var(--font-size-small);
+  color: var(--dark-blue);
+  font-weight: var(--font-weight-medium);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--gap-small);
+}
+
+input,
+select {
+  font-size: var(--font-size-small);
+  padding: var(--padding-small);
+  border: 1px solid var(--light-grey);
+  border-radius: 4px;
+  margin-top: var(--gap-tiny);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  font-size: var(--font-size-small);
+  color: var(--dark-blue);
+  margin-bottom: var(--gap-small);
+}
+

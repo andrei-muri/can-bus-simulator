@@ -1,0 +1,8 @@
+@import url(../../gstyles/variables.css);
+
+.container {
+    grid-area: wireframe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
