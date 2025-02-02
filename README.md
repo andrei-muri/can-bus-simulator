@@ -58,7 +58,7 @@ npm install
 
  ## Usage
  
- 1. Open you browser and navigate to `http://localhost:3000
+ 1. Open you browser and navigate to `http://localhost:3000`
  2. Select a configuration
  3. Start the simulation
  4. Navigate through discrete time intervals
@@ -70,7 +70,7 @@ npm install
 
 ## Author
 
-Muresan Andrei
+Muresan Andrei   
 [LinkedIn](https://www.linkedin.com/in/andrei-muresan-muri/)
 [GitHub](https://github.com/andrei-muri)
 
