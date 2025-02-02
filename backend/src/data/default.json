@@ -1,0 +1,114 @@
+{
+    "configuration": "default",
+    "results": {
+        "ecus": 5,
+        "total_messages": 15,
+        "conflicts_resolved": 3,
+        "total_simulation_time": 60,
+        "total_data_sent": "28MB",
+        "actions_performed": 25
+    },
+    "ecus_meta": {
+        "names": ["ECM", "PCM", "BCM", "ABS", "ESP"]
+    },
+    "times": [
+        {
+            "time": 0,
+            "states": ["Idle", "Idle", "Idle", "Idle", "Idle"],
+            "message_id": ["na", "na", "na", "na", "na"],
+            "ecus_bits": ["na", "na", "na", "na", "na"],
+            "data": ["na", "na", "na", "na", "na"],
+            "message_type": ["na", "na", "na", "na", "na"],
+            "message_description": ["", "", "", "", ""],
+            "bus_state": "recessive",
+            "log_messages": [
+                "TIME0%GLOBAL%2024-11-18T22:00:01 - All ecus are idle"
+            ],
+            "arbitration_message": "No ecu is transmitting"
+        },
+        {
+            "time": 1,
+            "states": ["Sending", "Receiving", "Idle", "Idle", "Idle"],
+            "message_id": ["0x1", "na", "na", "na", "na"],
+            "ecus_bits": ["0", "na", "na", "na", "na"],
+            "data": ["0xfc", "na", "na", "na", "na"],
+            "message_type": ["PDO", "na", "na", "na", "na"],
+            "message_description": ["Engine rpm", "Waiting for bus", "", "", ""],
+            "bus_state": "dominant",
+            "log_messages": [
+                "TIME1%ECU0%2024-11-18T22:00:02 - ECU 0 (ECM) is sending frame with id 0x1 and data 0xfc. First bit of the id is being sent"
+            ],
+            "arbitration_message": "ECU 0 is sending a message. No arbitration"
+        },
+        {
+            "time": 2,
+            "states": ["Idle", "Sending", "Receiving", "Idle", "Idle"],
+            "message_id": ["na", "0xa", "na", "na", "na"],
+            "ecus_bits": ["na", "1", "na", "na", "na"],
+            "data": ["na", "0xaf", "na", "na", "na"],
+            "message_type": ["PDO", "PDO", "na", "na", "na"],
+            "message_description": ["", "Vehicle speed", "", "", ""],
+            "bus_state": "recessive",
+            "log_messages": [
+                "TIME2%ECU1%2024-11-18T22:00:03 - ECU 1 (PCM) is sending frame with id 0x2 and data 0xaf. First bit of the id is being sent"
+            ],
+            "arbitration_message": "ECU 1 is sending a message. No arbitration"
+        },
+        {
+            "time": 3,
+            "states": ["Idle", "Idle", "Sending", "Receiving", "Receiving"],
+            "message_id": ["na", "na", "0xb", "na", "na"],
+            "ecus_bits": ["na", "na", "1", "na", "na"],
+            "data": ["na", "na", "0xde", "na", "na"],
+            "message_type": ["na", "na", "SDO", "na", "na"],
+            "message_description": ["", "", "Door status", "", ""],
+            "bus_state": "recessive",
+            "log_messages": [
+                "TIME3%ECU2%2024-11-18T22:00:04 - ECU 2 (BCM) is sending frame with id 0x3 and data 0xde. First bit of the id is being sent"
+            ],
+            "arbitration_message": "ECU 2 is sending a message. No arbitration"
+        },
+        {
+            "time": 4,
+            "states": ["Idle", "Idle", "Idle", "Sending", "Receiving"],
+            "message_id": ["na", "na", "na", "0xc", "na"],
+            "ecus_bits": ["na", "na", "na", "1", "na"],
+            "data": ["na", "na", "na", "0xaa", "na"],
+            "message_type": ["na", "na", "na", "PDO", "na"],
+            "message_description": ["", "", "", "Brake pressure", ""],
+            "bus_state": "recessive",
+            "log_messages": [
+                "TIME4%ECU3%2024-11-18T22:00:05 - ECU 3 (ABS) is sending frame with id 0x4 and data 0xaa. First bit of the id is being sent"
+            ],
+            "arbitration_message": "ECU 3 is sending a message. No arbitration"
+        },
+        {
+            "time": 5,
+            "states": ["Idle", "Idle", "Idle", "Idle", "Sending"],
+            "message_id": ["na", "na", "na", "na", "0x5"],
+            "ecus_bits": ["na", "na", "na", "na", "0"],
+            "data": ["na", "na", "na", "na", "0xbf"],
+            "message_type": ["na", "na", "na", "na", "SDO"],
+            "message_description": ["", "", "", "", "Yaw rate"],
+            "bus_state": "dominant",
+            "log_messages": [
+                "TIME5%ECU4%2024-11-18T22:00:06 - ECU 4 (ESP) is sending frame with id 0x5 and data 0xbf. First bit of the id is being sent"
+            ],
+            "arbitration_message": "ECU 4 is sending a message. No arbitration"
+        },
+        {
+            "time": 6,
+            "states": ["Idle", "Idle", "Idle", "Idle", "Idle"],
+            "message_id": ["na", "na", "na", "na", "na"],
+            "ecus_bits": ["na", "na", "na", "na", "na"],
+            "data": ["na", "na", "na", "na", "na"],
+            "message_type": ["na", "na", "na", "na", "na"],
+            "message_description": ["", "", "", "", ""],
+            "bus_state": "recessive",
+            "log_messages": [
+                "TIME6%GLOBAL%2024-11-18T22:00:07 - All ECUs are idle"
+            ],
+            "arbitration_message": "No ECU is transmitting"
+        }
+    ]
+}

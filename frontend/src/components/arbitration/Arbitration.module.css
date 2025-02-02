@@ -1,0 +1,74 @@
+@import url(../../gstyles/variables.css);
+
+.container {
+    grid-area: arbitration;
+    padding: 0px var(--padding-medium);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: var(--gap-large);
+    overflow: hidden;
+}
+
+.title {
+    font-family: var(--source-code-pro-font);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-extra-bold);
+    font-optical-sizing: auto;
+    color: var(--dark-blue);
+}
+
+.ecusContainer {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: var(--gap-medium);
+    overflow-y: auto;
+    max-height: 62%;
+    max-width: 400px;
+}
+
+.item {
+    background-color: var(--grey-blue);
+    height: 80px;
+    padding: var(--padding-small);
+    border: 2px solid var(--dark-blue);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--gap-medium);
+    align-items: center;
+    font-family: var(--source-code-pro-font);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.ecuName {
+    font-weight: var(--font-weight-extra-bold);
+    font-size: var(--font-size-ecu-arb);
+}
+
+.message {
+    text-align: center;
+    font-family: var(--source-code-pro-font);
+    font-size: var(--font-size-ecu-arb);
+    font-weight: var(--font-weight-extra-bold);
+}
+
+.ecusContainer::-webkit-scrollbar {
+    width: 15px; /* Adjust width for vertical scrollbar */
+}
+
+.ecusContainer::-webkit-scrollbar-thumb {
+    background-color: var(--dark-blue); /* Set thumb color */
+}
+
+.ecusContainer::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* Set track color */
+}
+
+.ecusContainer::-webkit-scrollbar-thumb:hover {
+    background-color: var(--mid-blue); /* Change thumb color on hover */
+}

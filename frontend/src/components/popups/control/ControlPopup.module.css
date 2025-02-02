@@ -1,0 +1,45 @@
+.container {
+  background-color: var(--grey-blue); /* Light grey-blue background for the popup */
+  padding: var(--padding-medium);
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: var(--source-code-pro-font);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container::-webkit-scrollbar {
+  width: 15px; /* Adjust width for vertical scrollbar */
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: var(--dark-blue); /* Set thumb color */
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Set track color */
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: var(--mid-blue); /* Change thumb color on hover */
+}
+
+h3 {
+  font-size: var(--font-size-medium);
+  color: var(--dark-blue);
+  text-align: center;
+  margin-bottom: var(--gap-medium);
+}
+
+.error {
+  color: var(--orange); /* Error message color */
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  margin-top: var(--gap-small);
+  text-align: center;
+}

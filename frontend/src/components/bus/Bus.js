@@ -23,7 +23,7 @@ const Bus = ({ busState }) => {
     let lastTime = 0;
     let currentTime = 0;
     let x = 0;
-    const speed = 200;
+    const speed = 290;
     const padding = 20;
 
     const draw = (p5) => {

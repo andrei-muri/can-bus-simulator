@@ -1,0 +1,62 @@
+{
+  "ECM": {
+    "sent_by": "ECM",
+    "message_name": "Engine speed",
+    "data_length": 1,
+    "data": "0x2"
+  },
+  "TCM": {
+    "sent_by": "TCM",
+    "message_name": "Gear position",
+    "data_length": 1,
+    "data": "0x1"
+  },
+  "PCM": {
+    "sent_by": "PCM",
+    "message_name": "Cruise control status",
+    "data_length": 1,
+    "data": "0x3"
+  },
+  "ABS": {
+    "sent_by": "ABS",
+    "message_name": "Brake pressure",
+    "data_length": 1,
+    "data": "0x5"
+  },
+  "ESP": {
+    "sent_by": "ESP",
+    "message_name": "Stability control status",
+    "data_length": 1,
+    "data": "0x0"
+  },
+  "BCM": {
+    "sent_by": "BCM",
+    "message_name": "Exterior light status",
+    "data_length": 1,
+    "data": "0x1"
+  },
+  "CCM": {
+    "sent_by": "CCM",
+    "message_name": "Climate control temperature",
+    "data_length": 1,
+    "data": "0x4"
+  },
+  "PDC": {
+    "sent_by": "PDC",
+    "message_name": "Parking distance warning",
+    "data_length": 1,
+    "data": "0x6"
+  },
+  "IVI": {
+    "sent_by": "IVI",
+    "message_name": "Media track info",
+    "data_length": 1,
+    "data": "0x7"
+  },
+  "DCU": {
+    "sent_by": "DCU",
+    "message_name": "Diagnostic read request",
+    "data_length": 1,
+    "data": "0x8"
+  }
+}

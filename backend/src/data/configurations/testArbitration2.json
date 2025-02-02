@@ -1,0 +1,40 @@
+{
+  "configuration_name": "testArbitration2",
+  "ecus": [
+    "DCU",
+    "ABS",
+    "MCM",
+    "CCM",
+    "BCM"
+  ],
+  "messages": [
+    {
+      "time": 1,
+      "sent_by": "MCM",
+      "message_name": "ABS on",
+      "data_length": 1,
+      "data": "0x1"
+    },
+    {
+      "time": 2,
+      "sent_by": "CCM",
+      "message_name": "Climate control temperature",
+      "data_length": 1,
+      "data": "0xa"
+    },
+    {
+      "time": 3,
+      "sent_by": "BCM",
+      "message_name": "Window position",
+      "data_length": 1,
+      "data": "0xff"
+    },
+    {
+      "time": 4,
+      "sent_by": "DCU",
+      "message_name": "Diagnostic read request",
+      "data_length": 1,
+      "data": "0xac"
+    }
+  ]
+}

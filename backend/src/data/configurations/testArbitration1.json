@@ -1,0 +1,49 @@
+{
+  "configuration_name": "testArbitration1",
+  "ecus": [
+    "ECM",
+    "CCM",
+    "MCM",
+    "IVI",
+    "LCM",
+    "DCU",
+    "TCM"
+  ],
+  "messages": [
+    {
+      "time": 1,
+      "sent_by": "ECM",
+      "message_name": "Engine speed",
+      "data_length": 1,
+      "data": "0xf"
+    },
+    {
+      "time": 1,
+      "sent_by": "MCM",
+      "message_name": "Lights on",
+      "data_length": 1,
+      "data": "0x1"
+    },
+    {
+      "time": 1,
+      "sent_by": "IVI",
+      "message_name": "Navigation directions",
+      "data_length": 1,
+      "data": "0xd"
+    },
+    {
+      "time": 1,
+      "sent_by": "CCM",
+      "message_name": "Climate control temperature",
+      "data_length": 1,
+      "data": "0xa"
+    },
+    {
+      "time": 1,
+      "sent_by": "TCM",
+      "message_name": "Transmission temperature",
+      "data_length": 1,
+      "data": "0xf"
+    }
+  ]
+}

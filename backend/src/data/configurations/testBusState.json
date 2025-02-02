@@ -1,0 +1,15 @@
+{
+  "configuration_name": "testBusState",
+  "ecus": [
+    "ECM"
+  ],
+  "messages": [
+    {
+      "time": 1,
+      "sent_by": "ECM",
+      "message_name": "Engine temperature",
+      "data_length": 1,
+      "data": "0xaf"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "configuration_name": "testMultipleMessages",
+  "ecus": [
+    "ECM"
+  ],
+  "messages": [
+    {
+      "time": 1,
+      "sent_by": "ECM",
+      "message_name": "Engine speed",
+      "data_length": 1,
+      "data": "0x11"
+    },
+    {
+      "time": 2,
+      "sent_by": "ECM",
+      "message_name": "Engine speed",
+      "data_length": 1,
+      "data": "0xfc"
+    },
+    {
+      "time": 3,
+      "sent_by": "ECM",
+      "message_name": "Engine load",
+      "data_length": 1,
+      "data": "0xff"
+    }
+  ]
+}

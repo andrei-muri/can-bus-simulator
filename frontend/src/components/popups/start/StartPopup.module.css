@@ -1,0 +1,29 @@
+.container {
+    position: fixed; /* Fix the popup position */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the popup */
+    background-color: var(--grey-blue); /* Light grey-blue background */
+    padding: var(--padding-medium);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 50%; /* Width of the popup */
+    max-width: 500px; /* Ensure it doesn't get too large */
+    text-align: center; /* Center the content */
+     /* Ensure it stays above other elements */
+    font-family: var(--source-code-pro-font);
+}
+
+.error {
+    color: var(--orange); /* Error message in orange */
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold);
+    margin-top: var(--gap-small);
+}
+
+.startButton {
+    margin-top: var(--gap-medium); /* Spacing above the button */
+    font-size: var(--font-size-small); /* Consistent font size */
+}
+
+

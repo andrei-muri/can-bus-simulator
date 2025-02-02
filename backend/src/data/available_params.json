@@ -1,0 +1,326 @@
+{
+  "available_names": ["ECM", "TCM", "PCM", "ABS", "ESP", "BCM", "CCM", "PDC", "IVI", "DCU", "LCM", "MCM"],
+  "available_messages": [
+    {
+      "name": "Engine speed",
+      "id": "0x101",
+      "CANopen_type": "TPDO",
+      "purpose": "RPM data sent by ECM"
+    },
+    {
+      "name": "Engine temperature",
+      "id": "0x102",
+      "CANopen_type": "TPDO",
+      "purpose": "Engine coolant temperature sent by ECM"
+    },
+    {
+      "name": "Throttle position",
+      "id": "0x103",
+      "CANopen_type": "TPDO",
+      "purpose": "Current throttle position sent by ECM"
+    },
+    {
+      "name": "Engine load",
+      "id": "0x104",
+      "CANopen_type": "TPDO",
+      "purpose": "Indicates the engine load percentage sent by ECM"
+    },
+    {
+      "name": "Gear position",
+      "id": "0x201",
+      "CANopen_type": "TPDO",
+      "purpose": "Current gear position sent by TCM"
+    },
+    {
+      "name": "Transmission temperature",
+      "id": "0x202",
+      "CANopen_type": "TPDO",
+      "purpose": "Temperature of the transmission system sent by TCM"
+    },
+    {
+      "name": "Clutch status",
+      "id": "0x203",
+      "CANopen_type": "TPDO",
+      "purpose": "Status of the clutch (engaged/disengaged) sent by TCM"
+    },
+    {
+      "name": "Transmission mode",
+      "id": "0x204",
+      "CANopen_type": "TPDO",
+      "purpose": "Current transmission mode sent by TCM"
+    },
+    {
+      "name": "Brake pressure",
+      "id": "0x301",
+      "CANopen_type": "TPDO",
+      "purpose": "Brake system pressure sent by ABS"
+    },
+    {
+      "name": "Wheel speed",
+      "id": "0x302",
+      "CANopen_type": "TPDO",
+      "purpose": "Individual wheel speed sent by ABS"
+    },
+    {
+      "name": "ABS status",
+      "id": "0x303",
+      "CANopen_type": "TPDO",
+      "purpose": "Indicates if ABS is active or inactive"
+    },
+    {
+      "name": "ABS on",
+      "id": "0x304",
+      "CANopen_type": "SDO",
+      "purpose": "Turns on the ABS"
+    },
+    {
+      "name": "ABS off",
+      "id": "0x305",
+      "CANopen_type": "SDO",
+      "purpose": "Turns off the ABS"
+    },
+    {
+      "name": "Stability control status",
+      "id": "0x401",
+      "CANopen_type": "TPDO",
+      "purpose": "Indicates if ESP is active or disabled"
+    },
+    {
+      "name": "Yaw rate",
+      "id": "0x402",
+      "CANopen_type": "TPDO",
+      "purpose": "Vehicle yaw rate data sent by ESP"
+    },
+    {
+      "name": "Traction control status",
+      "id": "0x403",
+      "CANopen_type": "TPDO",
+      "purpose": "Status of traction control system sent by ESP"
+    },
+    {
+      "name": "ESP on",
+      "id": "0x404",
+      "CANopen_type": "SDO",
+      "purpose": "Turns on the ESP"
+    },
+    {
+      "name": "ESP off",
+      "id": "0x405",
+      "CANopen_type": "SDO",
+      "purpose": "Turns off the ESP"
+    },
+    {
+      "name": "Window position",
+      "id": "0x503",
+      "CANopen_type": "RPDO",
+      "purpose": "Current window position sent by BCM"
+    },
+    {
+      "name": "Exterior light status",
+      "id": "0x504",
+      "CANopen_type": "TPDO",
+      "purpose": "Indicates if headlights or indicators are on"
+    },
+    {
+      "name": "Lights on",
+      "id": "0x505",
+      "CANopen_type": "SDO",
+      "purpose": "Turns on the lights"
+    },
+    {
+      "name": "Lights off",
+      "id": "0x506",
+      "CANopen_type": "SDO",
+      "purpose": "Turns off the lights"
+    },
+    {
+      "name": "Toggle lights mode",
+      "id": "0x507",
+      "CANopen_type": "SDO",
+      "purpose": "Switches between short phase and long phase"
+    },
+    {
+      "name": "Climate control temperature",
+      "id": "0x601",
+      "CANopen_type": "TPDO",
+      "purpose": "Target cabin temperature sent by CCM"
+    },
+    {
+      "name": "Fan speed",
+      "id": "0x602",
+      "CANopen_type": "RPDO",
+      "purpose": "Fan speed for HVAC processed by CCM"
+    },
+    {
+      "name": "Airflow direction",
+      "id": "0x603",
+      "CANopen_type": "TPDO",
+      "purpose": "Indicates airflow direction sent by CCM"
+    },
+    {
+      "name": "Air conditioning status",
+      "id": "0x604",
+      "CANopen_type": "TPDO",
+      "purpose": "On/Off status of air conditioning system"
+    },
+    {
+      "name": "Parking distance warning",
+      "id": "0x701",
+      "CANopen_type": "TPDO",
+      "purpose": "Distance to obstacles sent by PDC"
+    },
+    {
+      "name": "Proximity alert",
+      "id": "0x702",
+      "CANopen_type": "RPDO",
+      "purpose": "Alert for objects nearby processed by PDC"
+    },
+    {
+      "name": "Reverse gear status",
+      "id": "0x703",
+      "CANopen_type": "TPDO",
+      "purpose": "Indicates if reverse gear is engaged sent by PDC"
+    },
+    {
+      "name": "Obstacle distance",
+      "id": "0x704",
+      "CANopen_type": "TPDO",
+      "purpose": "Exact distance to the closest obstacle sent by PDC"
+    },
+    {
+      "name": "Media track info",
+      "id": "0x7A0",
+      "CANopen_type": "TPDO",
+      "purpose": "Current media track details sent by IVI"
+    },
+    {
+      "name": "Navigation directions",
+      "id": "0x7A1",
+      "CANopen_type": "TPDO",
+      "purpose": "Turn-by-turn navigation instructions sent by IVI"
+    },
+    {
+      "name": "System error message",
+      "id": "0x7A2",
+      "CANopen_type": "EMCY",
+      "purpose": "General error messages sent by IVI or multiple ECUs"
+    },
+    {
+      "name": "Fuel level",
+      "id": "0x7A3",
+      "CANopen_type": "TPDO",
+      "purpose": "Current fuel level percentage processed by IVI or BCM"
+    },
+    {
+      "name": "Battery voltage",
+      "id": "0x7A4",
+      "CANopen_type": "TPDO",
+      "purpose": "Current vehicle battery voltage sent by BCM or PCM"
+    },
+    {
+      "name": "Cruise control status",
+      "id": "0x7A5",
+      "CANopen_type": "TPDO",
+      "purpose": "Status of cruise control system sent by PCM or ECM"
+    },
+    {
+      "name": "Collision warning",
+      "id": "0x7A6",
+      "CANopen_type": "TPDO",
+      "purpose": "Indicates a potential collision sent by ESP or PDC"
+    },
+    {
+      "name": "Lane departure warning",
+      "id": "0x7A7",
+      "CANopen_type": "TPDO",
+      "purpose": "Alerts if vehicle is leaving its lane sent by ESP"
+    },
+    {
+      "name": "Adaptive cruise control setpoint",
+      "id": "0x7A8",
+      "CANopen_type": "RPDO",
+      "purpose": "Target distance for adaptive cruise control sent by PCM"
+    },
+    {
+      "name": "Diagnostic read request",
+      "id": "0x7A9",
+      "CANopen_type": "SDO",
+      "purpose": "Request to read diagnostic parameters"
+    },
+    {
+      "name": "Diagnostic read response",
+      "id": "0x7AA",
+      "CANopen_type": "SDO",
+      "purpose": "Response containing requested diagnostic data"
+    },
+    {
+      "name": "Configuration write request",
+      "id": "0x7AB",
+      "CANopen_type": "SDO",
+      "purpose": "Request to configure an ECU parameter"
+    },
+    {
+      "name": "Configuration write response",
+      "id": "0x7AC",
+      "CANopen_type": "SDO",
+      "purpose": "Acknowledgment of a successful configuration"
+    }
+  ],
+  "available_ecus": {
+    "ECM": {
+      "messages_it_can_send": ["0x101", "0x102", "0x103", "0x104"],
+      "messages_it_can_receive": ["0x601", "0x602", "0x7A8"]
+    },
+    "TCM": {
+      "messages_it_can_send": ["0x201", "0x202", "0x203", "0x204"],
+      "messages_it_can_receive": ["0x101", "0x103", "0x104"]
+    },
+    "PCM": {
+      "messages_it_can_send": ["0x101", "0x102", "0x201", "0x202", "0x7A5", "0x7A8"],
+      "messages_it_can_receive": ["0x103", "0x203", "0x601"]
+    },
+    "ABS": {
+      "messages_it_can_send": ["0x301", "0x302", "0x303"],
+      "messages_it_can_receive": ["0x401", "0x402", "0x304", "0x305"]
+    },
+    "ESP": {
+      "messages_it_can_send": ["0x401", "0x402", "0x403", "0x7A6", "0x7A7"],
+      "messages_it_can_receive": ["0x301", "0x302", "0x303", "0x404", "0x405"]
+    },
+    "BCM": {
+      "messages_it_can_send": ["0x503", "0x504", "0x7A3", "0x7A4"],
+      "messages_it_can_receive": ["0x601", "0x603", "0x7AB", "0x7AC"]
+    },
+    "CCM": {
+      "messages_it_can_send": ["0x601", "0x603", "0x604"],
+      "messages_it_can_receive": ["0x602", "0x503"]
+    },
+    "PDC": {
+      "messages_it_can_send": ["0x701", "0x703", "0x704", "0x7A6"],
+      "messages_it_can_receive": ["0x702", "0x7A8"]
+    },
+    "IVI": {
+      "messages_it_can_send": ["0x7A0", "0x7A1", "0x7A2"],
+      "messages_it_can_receive": ["0x7A3", "0x601", "0x7A9", "0x7AA"]
+    },
+    "DCU": {
+      "messages_it_can_send": ["0x7A9", "0x7AB"],
+      "messages_it_can_receive": [
+        "0x101", "0x102", "0x103", "0x104", "0x201", "0x202", "0x203", "0x204",
+        "0x301", "0x302", "0x303", "0x401", "0x402", "0x403", "0x503", "0x504",
+        "0x601", "0x602", "0x603", "0x604", "0x701", "0x702", "0x703", "0x704",
+        "0x7A0", "0x7A1", "0x7A2", "0x7A3", "0x7A4", "0x7A5", "0x7A6", "0x7A7",
+        "0x7A8", "0x7A9", "0x7AA", "0x7AB", "0x7AC"
+      ]
+    },
+    "LCM": {
+      "messages_it_can_send": [],
+      "messages_it_can_receive": ["0x505", "0x506", "0x507"]
+    },
+    "MCM": {
+      "messages_it_can_send": ["0x304", "0x305", "0x404", "0x405", "0x505", "0x506", "0x507",
+                               "0x7A9", "0x7AA", "0x7AB", "0x7AC"],
+      "messages_it_can_receive": []
+    }
+  }
+}
