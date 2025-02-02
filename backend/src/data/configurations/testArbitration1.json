@@ -6,7 +6,8 @@
     "MCM",
     "IVI",
     "LCM",
-    "DCU"
+    "DCU",
+    "TCM"
   ],
   "messages": [
     {
@@ -36,6 +37,13 @@
       "message_name": "Climate control temperature",
       "data_length": 1,
       "data": "0xa"
+    },
+    {
+      "time": 1,
+      "sent_by": "TCM",
+      "message_name": "Transmission temperature",
+      "data_length": 1,
+      "data": "0xf"
     }
   ]
 }
